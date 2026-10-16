@@ -1,0 +1,103 @@
+{
+  "name": {
+    "en": "Kamstrup module",
+    "da": "Kamstrup-modul"
+  },
+  "class": "sensor",
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "capabilities": [
+    "measure_power",
+    "meter_power.imported",
+    "meter_power.exported",
+    "measure_voltage.l1",
+    "measure_voltage.l2",
+    "measure_voltage.l3",
+    "measure_current.l1",
+    "measure_current.l2",
+    "measure_current.l3"
+  ],
+  "capabilitiesOptions": {
+    "measure_power": {
+      "title": {
+        "en": "Power",
+        "da": "Effekt"
+      }
+    },
+    "meter_power.imported": {
+      "title": {
+        "en": "Energy from grid",
+        "da": "Energi fra nettet"
+      },
+      "decimals": 3
+    },
+    "meter_power.exported": {
+      "title": {
+        "en": "Energy to grid",
+        "da": "Energi til nettet"
+      },
+      "decimals": 3
+    },
+    "measure_voltage.l1": {
+      "title": {
+        "en": "Voltage L1",
+        "da": "Spænding L1"
+      },
+      "decimals": 1
+    },
+    "measure_current.l1": {
+      "title": {
+        "en": "Current L1",
+        "da": "Strømstyrke L1"
+      },
+      "decimals": 2
+    },
+    "measure_voltage.l2": {
+      "title": {
+        "en": "Voltage L2",
+        "da": "Spænding L2"
+      },
+      "decimals": 1
+    },
+    "measure_current.l2": {
+      "title": {
+        "en": "Current L2",
+        "da": "Strømstyrke L2"
+      },
+      "decimals": 2
+    },
+    "measure_voltage.l3": {
+      "title": {
+        "en": "Voltage L3",
+        "da": "Spænding L3"
+      },
+      "decimals": 1
+    },
+    "measure_current.l3": {
+      "title": {
+        "en": "Current L3",
+        "da": "Strømstyrke L3"
+      },
+      "decimals": 2
+    }
+  },
+  "energy": {
+    "cumulative": true,
+    "cumulativeImportedCapability": "meter_power.imported",
+    "cumulativeExportedCapability": "meter_power.exported"
+  },
+  "images": {
+    "small": "/drivers/kamstrup/assets/images/small.png",
+    "large": "/drivers/kamstrup/assets/images/large.png",
+    "xlarge": "/drivers/kamstrup/assets/images/xlarge.png"
+  },
+  "pair": [
+    {
+      "id": "connect"
+    }
+  ]
+}

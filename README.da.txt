@@ -1,0 +1,3 @@
+Se hvad dit hjem bruger lige nu, ikke for et minut siden. smart-me Local læser din Kamstrup-elmåler gennem smart-me-modulet direkte på dit eget netværk, så effekten opdateres med få sekunders mellemrum uden en omvej gennem skyen, og Homey Energy viser hele hjemmets køb og salg af strøm.
+
+Spænding og strømstyrke på hver fase er også med. Brug dem i Flows til at holde øje med hovedsikringen, for eksempel til at sætte en elbillader eller en varmepumpe på pause, før en fase bliver overbelastet. Modbus TCP skal være slået til for modulet i smart-me-portalen, hvilket kræver en smart-me Professional-licens.

@@ -1,0 +1,22 @@
+{
+  "errors": {
+    "unreachable": "smart-me-modulet svarer ikke. Kontrollér, at det har strøm og er på Wi-Fi, og at Modbus TCP er slået til i smart-me-portalen.",
+    "invalid_ip": "Indtast en gyldig IP-adresse, for eksempel 192.168.1.194."
+  },
+  "pair": {
+    "title": "Forbind til smart-me-modulet",
+    "intro": "Slå Modbus TCP til for modulet i smart-me-portalen under avancerede indstillinger, og indtast derefter modulets IP-adresse. Du finder den i din routers liste over tilsluttede enheder.",
+    "ip_label": "IP-adresse",
+    "ip_hint": "Reservér adressen til modulet i din router, så den aldrig ændrer sig.",
+    "connect": "Forbind",
+    "testing": "Forbinder til modulet, det kan tage op til 20 sekunder...",
+    "refused": "Modulet afviste forbindelsen. Kontrollér, at Modbus TCP er slået til for modulet i smart-me-portalen.",
+    "unreachable": "Intet svarede på denne adresse. Kontrollér IP-adressen, og at Homey og modulet er på samme netværk.",
+    "no_answer": "Modulet tog imod forbindelsen, men svarede ikke. Vent et minut, og prøv igen.",
+    "no_mac": "Homey kunne ikke genkende modulet på netværket. Sørg for, at det er på samme netværk som Homey.",
+    "already_added": "Dette modul er allerede tilføjet."
+  },
+  "warnings": {
+    "stale": "Målerværdierne har ikke ændret sig i mere end 3 minutter. Kontrollér, at målerens krypteringsnøgle er indtastet for modulet i smart-me-portalen, og at modulet er online."
+  }
+}

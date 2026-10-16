@@ -1,0 +1,10 @@
+{
+  "name": "dk.drchip666.kamstrup",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "description": "Local Modbus TCP integration for the smart-me Kamstrup module",
+  "engines": {
+    "node": ">=22"
+  }
+}

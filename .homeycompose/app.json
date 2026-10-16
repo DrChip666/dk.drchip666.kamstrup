@@ -1,0 +1,72 @@
+{
+  "id": "dk.drchip666.kamstrup",
+  "version": "1.0.0",
+  "compatibility": ">=12.3.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "smart-me Local",
+    "da": "smart-me Local"
+  },
+  "description": {
+    "en": "Your Kamstrup meter, live and local",
+    "da": "Din Kamstrup-måler, live og lokalt"
+  },
+  "category": [
+    "energy"
+  ],
+  "brandColor": "#28599A",
+  "tags": {
+    "en": [
+      "smart-me",
+      "Kamstrup",
+      "Omnipower",
+      "electricity meter",
+      "energy",
+      "power",
+      "HAN"
+    ],
+    "da": [
+      "smart-me",
+      "Kamstrup",
+      "Omnipower",
+      "elmåler",
+      "energi",
+      "strømforbrug",
+      "HAN"
+    ]
+  },
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Morten B."
+  },
+  "homeyCommunityTopicId": 160971,
+  "source": "https://github.com/DrChip666/dk.drchip666.kamstrup",
+  "bugs": {
+    "url": "https://github.com/DrChip666/dk.drchip666.kamstrup/issues"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Morten B."
+      },
+      {
+        "name": "Claude (Anthropic), AI coding assistant"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "MortenBech241"
+      }
+    }
+  }
+}

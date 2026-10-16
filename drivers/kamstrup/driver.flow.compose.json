@@ -1,0 +1,202 @@
+{
+  "triggers": [
+    {
+      "id": "phase_currents_changed",
+      "title": {
+        "en": "Phase currents changed",
+        "da": "Strømstyrken på faserne ændrede sig"
+      },
+      "hint": {
+        "en": "Runs when the current on one or more phases changes, about every 10 seconds.",
+        "da": "Kører, når strømstyrken på en eller flere faser ændrer sig, cirka hvert 10. sekund."
+      },
+      "tokens": [
+        {
+          "name": "l1",
+          "type": "number",
+          "title": {
+            "en": "Current L1",
+            "da": "Strømstyrke L1"
+          },
+          "example": 6.5
+        },
+        {
+          "name": "l2",
+          "type": "number",
+          "title": {
+            "en": "Current L2",
+            "da": "Strømstyrke L2"
+          },
+          "example": 12.4
+        },
+        {
+          "name": "l3",
+          "type": "number",
+          "title": {
+            "en": "Current L3",
+            "da": "Strømstyrke L3"
+          },
+          "example": 4.0
+        },
+        {
+          "name": "highest",
+          "type": "number",
+          "title": {
+            "en": "Highest phase current",
+            "da": "Højeste fasestrøm"
+          },
+          "example": 12.4
+        }
+      ]
+    },
+    {
+      "id": "phase_current_rose_above",
+      "title": {
+        "en": "Current rose above a limit",
+        "da": "Strømstyrken steg over en grænse"
+      },
+      "titleFormatted": {
+        "en": "Current on [[phase]] rose above [[current]] A",
+        "da": "Strømstyrken på [[phase]] steg over [[current]] A"
+      },
+      "hint": {
+        "en": "Runs once when the current crosses the limit, for example to pause an EV charger before the main fuse trips.",
+        "da": "Kører én gang, når strømstyrken krydser grænsen, for eksempel for at sætte en elbillader på pause, før hovedsikringen springer."
+      },
+      "args": [
+        {
+          "name": "phase",
+          "type": "dropdown",
+          "title": {
+            "en": "Phase",
+            "da": "Fase"
+          },
+          "values": [
+            {
+              "id": "any",
+              "label": {
+                "en": "any phase",
+                "da": "en vilkårlig fase"
+              }
+            },
+            {
+              "id": "l1",
+              "label": {
+                "en": "L1",
+                "da": "L1"
+              }
+            },
+            {
+              "id": "l2",
+              "label": {
+                "en": "L2",
+                "da": "L2"
+              }
+            },
+            {
+              "id": "l3",
+              "label": {
+                "en": "L3",
+                "da": "L3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "current",
+          "type": "number",
+          "min": 0,
+          "max": 1000,
+          "step": 0.1,
+          "title": {
+            "en": "Current",
+            "da": "Strømstyrke"
+          },
+          "placeholder": {
+            "en": "Amperes",
+            "da": "Ampere"
+          }
+        }
+      ],
+      "tokens": [
+        {
+          "name": "current",
+          "type": "number",
+          "title": {
+            "en": "Highest phase current",
+            "da": "Højeste fasestrøm"
+          },
+          "example": 16.2
+        }
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "id": "phase_current_above",
+      "title": {
+        "en": "Current !{{is|isn't}} above a limit",
+        "da": "Strømstyrken !{{er|er ikke}} over en grænse"
+      },
+      "titleFormatted": {
+        "en": "Current on [[phase]] !{{is|isn't}} above [[current]] A",
+        "da": "Strømstyrken på [[phase]] !{{er|er ikke}} over [[current]] A"
+      },
+      "args": [
+        {
+          "name": "phase",
+          "type": "dropdown",
+          "title": {
+            "en": "Phase",
+            "da": "Fase"
+          },
+          "values": [
+            {
+              "id": "any",
+              "label": {
+                "en": "any phase",
+                "da": "en vilkårlig fase"
+              }
+            },
+            {
+              "id": "l1",
+              "label": {
+                "en": "L1",
+                "da": "L1"
+              }
+            },
+            {
+              "id": "l2",
+              "label": {
+                "en": "L2",
+                "da": "L2"
+              }
+            },
+            {
+              "id": "l3",
+              "label": {
+                "en": "L3",
+                "da": "L3"
+              }
+            }
+          ]
+        },
+        {
+          "name": "current",
+          "type": "number",
+          "min": 0,
+          "max": 1000,
+          "step": 0.1,
+          "title": {
+            "en": "Current",
+            "da": "Strømstyrke"
+          },
+          "placeholder": {
+            "en": "Amperes",
+            "da": "Ampere"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "errors": {
+    "unreachable": "The smart-me module is not answering. Check that it is powered, connected to Wi-Fi and that Modbus TCP is enabled in the smart-me portal.",
+    "invalid_ip": "Enter a valid IP address, for example 192.168.1.194."
+  },
+  "pair": {
+    "title": "Connect to the smart-me module",
+    "intro": "Enable Modbus TCP for the module in the smart-me portal under advanced settings, then enter the module's IP address. You find it in your router's list of connected devices.",
+    "ip_label": "IP address",
+    "ip_hint": "Reserve this address for the module in your router so it never changes.",
+    "connect": "Connect",
+    "testing": "Connecting to the module, this can take up to 20 seconds...",
+    "refused": "The module refused the connection. Check that Modbus TCP is enabled for it in the smart-me portal.",
+    "unreachable": "Nothing answered at this address. Check the IP address and that Homey and the module are on the same network.",
+    "no_answer": "The module accepted the connection but did not answer. Wait a minute and try again.",
+    "no_mac": "Homey could not identify the module on the network. Make sure it is on the same network as Homey.",
+    "already_added": "This module has already been added."
+  },
+  "warnings": {
+    "stale": "The meter values haven't changed for more than 3 minutes. Check that the meter encryption key is entered for the module in the smart-me portal and that the module is online."
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Connection",
+      "da": "Forbindelse"
+    },
+    "children": [
+      {
+        "id": "host",
+        "type": "text",
+        "value": "",
+        "label": {
+          "en": "IP address",
+          "da": "IP-adresse"
+        },
+        "hint": {
+          "en": "The module's IP address on your network. Reserve this address for the module in your router so it never changes.",
+          "da": "Modulets IP-adresse på dit netværk. Reservér adressen til modulet i din router, så den aldrig ændrer sig."
+        }
+      },
+      {
+        "id": "request_interval",
+        "type": "number",
+        "value": 2.5,
+        "min": 2,
+        "max": 30,
+        "step": 0.5,
+        "units": {
+          "en": "seconds",
+          "da": "sekunder"
+        },
+        "label": {
+          "en": "Time between requests",
+          "da": "Tid mellem forespørgsler"
+        },
+        "hint": {
+          "en": "Every second request reads the power, so power updates at twice this interval. The module ignores requests that come faster than every 2 seconds.",
+          "da": "Hver anden forespørgsel læser effekten, så effekten opdateres med det dobbelte af dette interval. Modulet ignorerer forespørgsler, der kommer hurtigere end hvert 2. sekund."
+        }
+      },
+      {
+        "id": "mac",
+        "type": "label",
+        "value": "",
+        "label": {
+          "en": "MAC address",
+          "da": "MAC-adresse"
+        }
+      }
+    ]
+  }
+]

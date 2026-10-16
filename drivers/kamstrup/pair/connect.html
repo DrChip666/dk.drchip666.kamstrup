@@ -1,0 +1,55 @@
+<header class="homey-header">
+  <h1 class="homey-title" data-i18n="pair.title"></h1>
+  <p class="homey-subtitle" data-i18n="pair.intro"></p>
+</header>
+
+<form id="connect-form" class="homey-form" onsubmit="return false;">
+  <div class="homey-form-group">
+    <label class="homey-form-label" for="host" data-i18n="pair.ip_label"></label>
+    <input class="homey-form-input" id="host" type="text" inputmode="decimal"
+           autocomplete="off" placeholder="192.168.1.194" />
+  </div>
+  <p class="homey-form-hint" data-i18n="pair.ip_hint"></p>
+</form>
+
+<p id="error" class="error" style="display: none;"></p>
+
+<button id="connect" class="homey-button-primary-full" data-i18n="pair.connect"></button>
+
+<style>
+  .error {
+    color: var(--homey-color-red-500, #d32f2f);
+    margin: 12px 0;
+  }
+</style>
+
+<script type="application/javascript">
+  const hostInput = document.getElementById('host');
+  const errorBox = document.getElementById('error');
+  const button = document.getElementById('connect');
+
+  function showError(message) {
+    errorBox.textContent = message;
+    errorBox.style.display = message ? 'block' : 'none';
+  }
+
+  async function connect() {
+    showError('');
+    button.disabled = true;
+    Homey.showLoadingOverlay(Homey.__('pair.testing'));
+    try {
+      const result = await Homey.emit('connect', { host: hostInput.value });
+      await Homey.createDevice(result.device);
+      Homey.done();
+    } catch (err) {
+      Homey.hideLoadingOverlay();
+      showError(err && err.message ? err.message : String(err));
+      button.disabled = false;
+    }
+  }
+
+  button.addEventListener('click', connect);
+  hostInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') connect();
+  });
+</script>

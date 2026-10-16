@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" width="960" height="960" fill="none" stroke="#000" stroke-width="40" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M200 140 L700 100 Q760 96 760 156 V804 Q760 864 700 860 L200 820 Q160 816 160 776 V184 Q160 144 200 140 Z"/>
+  <path d="M250 230 L660 206 V400 L250 410 Z"/>
+  <path d="M300 300 H420 M300 350 H520"/>
+  <path d="M250 520 L660 512 V760 L250 744 Z"/>
+  <path d="M330 580 L580 576 V700 L330 692 Z"/>
+  <path d="M460 600 L420 640 H470 L440 676"/>
+</svg>
